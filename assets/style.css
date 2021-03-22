@@ -2,3 +2,25 @@
     box-sizing: content-box;
   }
 
+  header {
+    width: 100%;
+    height: 100px;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    font-size: xx-large;
+    background-color: #12448b;
+}
+
+h1, h3, p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+html {
+    height: 100%;
+}
