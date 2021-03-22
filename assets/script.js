@@ -48,7 +48,7 @@ function renderSearchHistory(cityName) {
     searchHistoryEl.empty();
     var searchHistoryArr = JSON.parse(localStorage.getItem("searchHistory"));
     for (var i = 0; i < searchHistoryArr.length; i++) {
-        var newListItem = $(`<li class="historyEntry list-group-item"></li>`);
+        var newListItem = $(`<li class="historyEntry list-group-item text-dark"></li>`);
         newListItem.text(searchHistoryArr[i]);
         searchHistoryEl.prepend(newListItem);
     }
