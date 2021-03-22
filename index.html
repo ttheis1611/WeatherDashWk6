@@ -18,7 +18,7 @@
         <p id="currentDay" class="lead">Monday</p>
     </header>
 
-    <div class="col-md-12 container">
+    <div class="col-md-12">
         <div class="search">
             <div class="row">
                 <h2>Weather by City:</h2>
@@ -29,37 +29,30 @@
                     <i class="fas fa-search-location"></i>
                 </button>
             </div>
-        <div class="container"></div>
+
+        <div class="card list-group list-group-flush"></div>
             <h4>City Search History: </h4>
             <button onclick="clearCity()" class="col-md-2 clearBtn"><i class="fas fa-trash"></i>
             </button>
             <div class="col-md-2 historyItems"><i class="far fa-font-case"></i></div>
         </div>
     </div>
-    <div class="col-md-12 container">
-        <div class="col ">
+
+    <div class="card">
+        <div class="col-md-2">
             <div class="row">
                 <h2 class="card-title cityName">City Name</h2>
-                <h3 class=" card currentDate"></h3>
+                <h3 class="card currentDate"></h3>
                 <img class="weatherIcon"></img>
             </div>
-            <div class="row">
-                <p class="temp">Temperature:</p>
-            </div>
-            <div class="row">
-                <p class="humidity">Humidity:</p>
-            </div>
-            <div class="row">
-                <p class="windSpeed">Wind Speed:</p>
-            </div>
-            <div class="row">
-                <p class="windDirect">Wind From deg:</p>
-            </div>
-            <div class="row">
-                <p class="uvIndex">UV Index:</p>
-            </div>
+            <div class="row temp">Temperature:</div>
+            <div class="row humidity">Humidity:</div>
+            <div class="row windSpeed">Wind Speed:</div>
+            <div class="row windDirect">Wind From deg:</div>
+            <div class="row uvIndex">UV Index:</div>
         </div>
     </div>
+
     <div class="col-md-12 container">
         <div class="col">
         <h3 class="card-title">5-Day Forecast:</h3>

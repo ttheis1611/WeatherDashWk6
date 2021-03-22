@@ -54,9 +54,35 @@ button:focus {
 
 h1, h3, p, li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
 
 header h1 {
     margin: 0;
     padding-top: 10px;
 }
 /*End header styling */
+
+.forecast {
+    margin-top: 25px;
+    border: solid 1px #cecfd2;
+    margin-left: 5%;
+    min-width: 640px;
+    padding: 12px 15px 15px 15px;
+    height: 40%;
+}
+
+
+.row {
+    /* display: flex; */
+    line-height: 50%;
+    margin: 5px 5px 5px 0px;
+}
+
+.row * {
+    margin-right: 5px;
+}
+
+/* .hide {
+    display: none;
+} */
+
