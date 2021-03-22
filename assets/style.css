@@ -53,8 +53,7 @@ button:focus {
 }
 
 h1, h3, p, li {
-    font-family: 'Roboto', sans-serif;
-}
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 
 header h1 {
     margin: 0;
