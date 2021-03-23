@@ -12,23 +12,23 @@
 </head>
 
 <body>
-     <header>
+    <header>
         <h1>Weather Dashboard</h1>
         <p id="currentDay" class="lead">Monday</p>
     </header>
     <div class="row">
-        <div class="col card-item col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
+        <div class="col col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
             <h2>Weather by City:</h2>
-                 <input type="text" class="searchInput" placeholder="San Antonio">
-                    <button type="submit" class="searchBtn"><i class="fas fa-search-location"></i></button>
-                    <h4 class="">City Search History: </h4>
-                    <button onclick="clearCity()" class="clearBtn"><i class="fas fa-trash"></i></button>
+            <input type="text" class="searchInput" placeholder="ex. San Antonio">
+            <button type="submit" class="searchBtn"><i class="fas fa-search-location"></i></button>
+            <h4 class="">City Search History: </h4>
+            <button onclick="clearCity()" class="clearBtn"><i class="fas fa-trash"></i></button>
             <div class="historyItems"><i class="text-dark far fa-font-case"></i></div>
         </div>
         <div class="col card-item">
-                <h2 class="cityName bg-dark text-light sticky-top">City Name</h2>
-                <h3 class="currentDate"></h3>
-                <img class="weatherIcon"></img>
+            <h2 class="cityName bg-dark text-light sticky-top">City Name</h2>
+            <h3 class="currentDate"></h3>
+            <img class="weatherIcon"></img>
             <div class="temp">Temperature:</div>
             <div class="humidity">Humidity:</div>
             <div class="windSpeed">Wind Speed:</div>
@@ -40,13 +40,13 @@
             <div class="fiveDay"></div>
         </div>
     </div>
-<footer class="footer"></footer>
+    <footer class="footer"></footer>
 
 
-        <script src="https://kit.fontawesome.com/80833262c1.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="./assets/script.js"></script>
+    <script src="https://kit.fontawesome.com/80833262c1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
