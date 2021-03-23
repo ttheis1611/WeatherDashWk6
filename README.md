@@ -31,12 +31,15 @@ There was much help to build a working product. Credit goes to:
     4. Hours of Google searching and preparing to pull all my hair out again. Styling is more difficult for me when I have no help.
 
 Main Display Dashboard
+![image](https://user-images.githubusercontent.com/76980137/112086862-fb0a3600-8b5a-11eb-8df6-e8dbaf5b599c.png)
 
 
 List for previous searches
+![image](https://user-images.githubusercontent.com/76980137/112086911-0eb59c80-8b5b-11eb-8740-5486b7f11d52.png)
 
 
 History Storage
+![image](https://user-images.githubusercontent.com/76980137/112087235-93a0b600-8b5b-11eb-9b8d-ba230d25644f.png)
 
 
 
