@@ -29,6 +29,7 @@ There was much help to build a working product. Credit goes to:
     3. Using jQuery - https://www.youtube.com/watch?v=G9gXLF-EPcM This video was awesome for helping get this going with JQuery functions
     
     4. Hours of Google searching and preparing to pull all my hair out again. Styling is more difficult for me when I have no help.
+    5. API's - openWeather, bootstrap, moment.js, fontawesome and jquery.
 
 Main Display Dashboard
 ![image](https://user-images.githubusercontent.com/76980137/112086911-0eb59c80-8b5b-11eb-8740-5486b7f11d52.png)
