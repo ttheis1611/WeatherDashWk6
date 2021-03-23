@@ -28,12 +28,16 @@ There was much help to build a working product. Credit goes to:
    
     3. Using jQuery - https://www.youtube.com/watch?v=G9gXLF-EPcM This video was awesome for helping get this going with JQuery functions
     
-    4. Hours of Google searching and preparing to pull all my hair out again.
+    4. Hours of Google searching and preparing to pull all my hair out again. Styling is more difficult for me when I have no help.
 
-Main Page - Has local storage clear button
+Main Display Dashboard
 
 
-Application showing storage data
+List for previous searches
+
+
+History Storage
+
 
 
 
