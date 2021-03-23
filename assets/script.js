@@ -12,7 +12,7 @@ var humidityEl = $(".humidity");
 var windSpeedEl = $(".windSpeed");
 var windDirectEl = $(".windDirect");
 var uvIndexEl = $(".uvIndex");
-var cardRow = $(".card-row");
+var cardRow = $(".fiveDay");
 var today = (moment().format('L'));
 
 // Use clear all tasks button
@@ -48,7 +48,7 @@ function renderSearchHistory(cityName) {
     searchHistoryEl.empty();
     var searchHistoryArr = JSON.parse(localStorage.getItem("searchHistory"));
     for (var i = 0; i < searchHistoryArr.length; i++) {
-        var newListItem = $(`<li class="historyEntry list-group-item text-dark"></li>`);
+        var newListItem = $(`<li class="historyEntry hist-li list-group-item text-dark"></li>`);
         newListItem.text(searchHistoryArr[i]);
         searchHistoryEl.prepend(newListItem);
     }
@@ -96,7 +96,6 @@ function getWeather(desiredCity) {
                             renderWeatherData(cityObj.cityName, cityObj.cityTemp, cityObj.cityHumidity, cityObj.cityWindSpeed, cityObj.cityWindDirect, renderedWeatherIcon, uvData.value);
                             renderSearchHistory(cityObj.cityName);
                         } else {
-                            console.log("City already in searchHistory. Not adding to history list")
                             var renderedWeatherIcon = `https:///openweathermap.org/img/w/${cityObj.cityWeatherIconName}.png`;
                             renderWeatherData(cityObj.cityName, cityObj.cityTemp, cityObj.cityHumidity, cityObj.cityWindSpeed, cityObj.cityWindDirect, renderedWeatherIcon, uvData.value);
                         }
@@ -109,7 +108,6 @@ function getWeather(desiredCity) {
                             renderWeatherData(cityObj.cityName, cityObj.cityTemp, cityObj.cityHumidity, cityObj.cityWindSpeed, cityObj.cityWindDirect, renderedWeatherIcon, uvData.value);
                             renderSearchHistory(cityObj.cityName);
                         } else {
-                            console.log("City already in searchHistory. Not adding to history list")
                             var renderedWeatherIcon = `https:///openweathermap.org/img/w/${cityObj.cityWeatherIconName}.png`;
                             renderWeatherData(cityObj.cityName, cityObj.cityTemp, cityObj.cityHumidity, cityObj.cityWindSpeed, cityObj.cityWindDirect, renderedWeatherIcon, uvData.value);
                         }
@@ -150,11 +148,11 @@ function getWeather(desiredCity) {
 function createForecastCard(date, icon, temp, humidity) {
 
     // HTML elements we will create to later
-    var fiveDayCardEl = $("<div>").attr("class", "five-day-card");
+    var fiveDayCardEl = $("<div>").attr("class", "row");
     var cardDate = $("<h4>").attr("class", "card-text");
     var cardIcon = $("<img>").attr("class", "weatherIcon");
     var cardTemp = $("<p>").attr("class", "card-text");
-    var cardHumidity = $("<p>").attr("class", "card-text");
+    var cardHumidity = $("<p>").attr("class", "card-text col");
 
     cardRow.append(fiveDayCardEl);
     cardDate.text(date);

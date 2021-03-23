@@ -12,55 +12,35 @@
 </head>
 
 <body>
-
-    <header class="display-3">
+     <header>
         <h1>Weather Dashboard</h1>
         <p id="currentDay" class="lead">Monday</p>
     </header>
-
-    <aside class="row min-vh-100 no-gutters">
-        <div class="search col-12 col-sm-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-sm-3">
-            <div class="search-sec row">
-                <h2>Weather by City:</h2>
-            </div>
-            <div class="row">
-                <input type="text" class="search-sec searchInput" placeholder="San Antonio">
-                <button type="submit" class="primary-btn searchBtn">
-                    <i class="fas fa-search-location"></i>
-                </button>
-            </div>
-
-            <div class="card list-group list-group-flush"></div>
-            <h4 class="card-item">City Search History: </h4>
-            <button onclick="clearCity()" class="btn btn-delete mb-2 mb-md-4 clearBtn"><i class="fas fa-trash"></i>
-            </button>
+    <div class="row">
+        <div class="col card-item col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
+            <h2>Weather by City:</h2>
+                 <input type="text" class="searchInput" placeholder="San Antonio">
+                    <button type="submit" class="searchBtn"><i class="fas fa-search-location"></i></button>
+                    <h4 class="">City Search History: </h4>
+                    <button onclick="clearCity()" class="clearBtn"><i class="fas fa-trash"></i></button>
             <div class="historyItems"><i class="text-dark far fa-font-case"></i></div>
         </div>
-    </aside>
-
-    <main class="col-12 col-lg-9 d-flex flex-column">
-        <div class="m-5 row justify-content-around">
-            <div class="card">
-                <div class="card-header col-12 col-md-6 col-xl-9 mb-9">
-                    <h2 class="card-title cityName card-header bg-dark text-light d-flex align-items-center">City Name</h2>
-                    <h3 class="card currentDate"></h3>
-                    <img class="weatherIcon"></img>
-                </div>
-                <div class="temp">Temperature:</div>
-                <div class="humidity">Humidity:</div>
-                <div class="windSpeed">Wind Speed:</div>
-                <div class="windDirect">Wind From deg:</div>
-                <div class="uvIndex">UV Index:</div>
-            </div>
+        <div class="col card-item">
+                <h2 class="cityName bg-dark text-light sticky-top">City Name</h2>
+                <h3 class="currentDate"></h3>
+                <img class="weatherIcon"></img>
+            <div class="temp">Temperature:</div>
+            <div class="humidity">Humidity:</div>
+            <div class="windSpeed">Wind Speed:</div>
+            <div class="windDirect">Wind From deg:</div>
+            <div class="uvIndex">UV Index:</div>
         </div>
-    </main>
-
-    <div class="col-md-12 container">
-        <div class="col">
-            <h3 class="card-title">5-Day Forecast:</h3>
-            <div class="col-xs-12 card-row">
-            </div>
+        <div class="col-4 card-item">
+            <h2 class="bg-dark text-light sticky-top">5-Day Forecast:</h2>
+            <div class="fiveDay"></div>
         </div>
+    </div>
+<footer class="footer"></footer>
 
 
         <script src="https://kit.fontawesome.com/80833262c1.js" crossorigin="anonymous"></script>
